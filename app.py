@@ -28,23 +28,23 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 # local_image_path = "static/bg.jpeg"  # Replace with your image path
 # background_image_base64 = get_base64_image(local_image_path)
 
-# Inject CSS for background image
-st.markdown(
-    f"""
-    <style>
-    /* Body background styling */
-    body {{
-        background: url("data:image/jpg;base64,{background_image_base64}") no-repeat center center fixed; 
-        background-size: cover;
-    }}
-    /* Override the main content styling to make it transparent */
-    .stApp {{
-        background: transparent;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# # Inject CSS for background image
+# st.markdown(
+#     f"""
+#     <style>
+#     /* Body background styling */
+#     body {{
+#         background: url("data:image/jpg;base64,{background_image_base64}") no-repeat center center fixed; 
+#         background-size: cover;
+#     }}
+#     /* Override the main content styling to make it transparent */
+#     .stApp {{
+#         background: transparent;
+#     }}
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 st.title("आयुर्वेद Assistant")
 
