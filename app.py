@@ -18,15 +18,15 @@ load_dotenv()
 groq_api_key = os.getenv('GROQ_API_KEY')
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
-# Function to encode local image as base64
-def get_base64_image(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    return encoded_image
+# # Function to encode local image as base64
+# def get_base64_image(image_path):
+#     with open(image_path, "rb") as image_file:
+#         encoded_image = base64.b64encode(image_file.read()).decode()
+#     return encoded_image
 
-# Path to your local image
-local_image_path = "static/bg.jpeg"  # Replace with your image path
-background_image_base64 = get_base64_image(local_image_path)
+# # Path to your local image
+# local_image_path = "static/bg.jpeg"  # Replace with your image path
+# background_image_base64 = get_base64_image(local_image_path)
 
 # Inject CSS for background image
 st.markdown(
