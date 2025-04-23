@@ -68,7 +68,7 @@ def vector_embedding():
         st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:20])
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
-def extract_image_from_herbs_folder_or_web(plant_name, groq_api_key, folder_path="C:/Users/Shanmugam/OneDrive/Desktop/Chittu Kuruvi/AyurHerbs"):
+def extract_image_from_herbs_folder_or_web(plant_name, groq_api_key, folder_path="./AyurHerbs"):
     plant_image = None
     plant_name_words = plant_name.lower().split()
 
